@@ -1,6 +1,5 @@
 FROM ubuntu:latest
-RUN apt-get update && \
-    apt-get clean
+RUN apt update && apt clean
 COPY target\original-jb-hello-world-maven-0.2.0.jar \usr\app
 WORKDIR \usr\app
 EXPOSE 8080
